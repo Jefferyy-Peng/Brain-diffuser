@@ -6,10 +6,11 @@ import scipy.io as spio
 import nibabel as nib
 
 import argparse
-parser = argparse.ArgumentParser(description='Argument Parser')
-parser.add_argument("-sub", "--sub",help="Subject Number",default=1)
-args = parser.parse_args()
-sub=int(args.sub)
+# parser = argparse.ArgumentParser(description='Argument Parser')
+# parser.add_argument("-sub", "--sub",help="Subject Number",default=1)
+# args = parser.parse_args()
+# sub=int(args.sub)
+sub = 1
 assert sub in [1,2,5,7]
 
 def loadmat(filename):
